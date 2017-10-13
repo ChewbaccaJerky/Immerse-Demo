@@ -1,0 +1,104 @@
+/* primary color rgb(128, 206, 214)*/
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arvo', serif;
+}
+
+.demo-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(128, 206, 214);
+}
+
+.header h1 {
+  font-size: 1.5em;
+}
+
+.header h1 a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.5s;
+}
+
+.header h1 a:hover {
+  color: #FFF;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 1em 15em;
+}
+
+.jumbotron button {
+  width: 30%;
+  background-color: rgba(128, 206, 214, 0.7);
+  transition: background-color 1s;
+  border: none;
+  border-radius: 1em;
+  margin: 1em 0 0 0;
+  padding: 1em;
+}
+
+.jumbotron button a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 2em;
+}
+
+.jumbotron button:hover {
+  background-color: rgba(128, 206, 214, 1);
+}
+
+/*BACKGROUND INFO*/
+.background-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 3em;
+  background-color: #888;
+  color: #FFF;
+}
+
+background-info img {
+  height: 5em;
+}
+
+.background-info .info {
+  width: 50%;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex: space-around;
+  background-color: rgba(128, 206, 214, 0.7);
+  padding: 1em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #FFF;
+  transition: color 0.5s;
+}
+
+.footer a:hover {
+  color: #000;
+}
