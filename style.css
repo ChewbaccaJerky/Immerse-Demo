@@ -14,17 +14,23 @@ body, html {
 /* Header */
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(128, 206, 214);
+  color: #FFF;
+}
+
+.header img {
+  height: 2em;
 }
 
 .header h1 {
   font-size: 1.5em;
+  margin-left: 1em;
 }
 
 .header h1 a {
   text-decoration: none;
-  color: #000;
+  color: #FFF;
   transition: color 0.5s;
 }
 
@@ -32,8 +38,26 @@ body, html {
   color: #FFF;
 }
 
+.author-dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 12%;
+  margin-right: 1em;
+}
+
+.author-dropdown h1 {
+  margin-right: .5em;
+}
+
+
 .dropdown-content {
   display: none;
+}
+
+#burger-button {
+  background: url('./burger.png');
 }
 
 /* JUMBOTRON */
@@ -70,8 +94,8 @@ body, html {
 .background-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
   padding: 1em 3em;
   background-color: #888;
   color: #FFF;
@@ -83,13 +107,14 @@ background-info img {
 
 .background-info .info {
   width: 50%;
+  margin-left: 2em;
 }
 
 /* FOOTER */
 .footer {
   display: flex;
-  flex: space-around;
-  background-color: rgba(128, 206, 214, 0.7);
+  justify-content: space-between;
+  background-color: rgba(128, 206, 214, 1);
   padding: 1em;
 }
 

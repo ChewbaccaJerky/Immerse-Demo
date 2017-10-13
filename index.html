@@ -12,9 +12,16 @@
         <h1><a href="https://adeptio.github.io/Immerse">Immerse</a></h1>
         <div class="author-dropdown">
           <h1>Authors</h1>
-          <div class="dropdown-content">
-            testing....
-          </div>
+
+          <button id="burger-button"/>
+            <div id="dropdown-content">
+              <select>
+                <option>John</option>
+                <option>Nick</option>
+                <option>Mike</option>
+              </select>
+            </div>
+
         </div>
       </div>
     </div>
@@ -31,21 +38,25 @@
       <img src="./vr-headset-2.png" alt="vr headset">
 
       <div class="info">
-        <h3>What's Exposure Therapy?</h3>
+        <h3>What is Exposure Therapy?</h3>
         <p>
           Exposure therapy is a technique in behavior therapy that has existed since the 1950s and is thought to help treat anxiety disorders. Exposure therapy involves exposing the patient to the source of anxiety or a representation of it without the intention to cause harm.
         </br></br>
           Virtual Reality technology represents an incredible new tool for exposure therapy. Through VR, the core principle of causing no harm to the patient is much more easily fulfilled. Therapists also have more direct control over the intensity and type of anxiety source. Cost of treatment is greatly reduced since anxiety sources are digital.
+        </br></br>
+          Immerse brings you three levels of intensity for two of the most common phobias: Acrophobia (heights), and Agoraphobia (crowds).
         </p>
       </div>
     </div>
 
     <div class="footer">
       <a href="https://adeptio.github.io/Immerse">Immerse</a>
+      <a href="">Credits</a>
     </div>
 
     <script>
-      document.getElement
+      let authorList = document.getElementById('dropdown-content');
+      document.getElementById('burger-button').onClick(authorList.attr('display', 'block'));
     </script>
   </body>
 </html>
