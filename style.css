@@ -15,7 +15,7 @@ body, html {
 .header {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(128, 206, 214);
+  background-color: rgba(128, 206, 214, 0.5);
 }
 
 .header h1 {
