@@ -11,17 +11,7 @@
       <div class="header">
         <h1><a href="https://adeptio.github.io/Immerse">Immerse</a></h1>
         <div class="author-dropdown">
-          <h1>Authors</h1>
-
-          <button id="burger-button"/>
-            <div id="dropdown-content">
-              <select>
-                <option>John</option>
-                <option>Nick</option>
-                <option>Mike</option>
-              </select>
-            </div>
-
+          <h1 id="authorBtn">Authors</h1>
         </div>
       </div>
     </div>
@@ -38,25 +28,78 @@
       <img src="./vr-headset-2.png" alt="vr headset">
 
       <div class="info">
+
+        <h3>What is Immerse?</h3>
+        <p>
+          Immerse brings you three levels of intensity for two of the most common phobias: Acrophobia (heights), and Agoraphobia (crowds).
+        </p>
         <h3>What is Exposure Therapy?</h3>
         <p>
           Exposure therapy is a technique in behavior therapy that has existed since the 1950s and is thought to help treat anxiety disorders. Exposure therapy involves exposing the patient to the source of anxiety or a representation of it without the intention to cause harm.
         </br></br>
           Virtual Reality technology represents an incredible new tool for exposure therapy. Through VR, the core principle of causing no harm to the patient is much more easily fulfilled. Therapists also have more direct control over the intensity and type of anxiety source. Cost of treatment is greatly reduced since anxiety sources are digital.
-        </br></br>
-          Immerse brings you three levels of intensity for two of the most common phobias: Acrophobia (heights), and Agoraphobia (crowds).
         </p>
       </div>
     </div>
 
     <div class="footer">
       <a href="https://adeptio.github.io/Immerse">Immerse</a>
-      <a href="">Credits</a>
+      <h1 id="creditBtn">Credits</h1>
     </div>
 
-    <script>
-      let authorList = document.getElementById('dropdown-content');
-      document.getElementById('burger-button').onClick(authorList.attr('display', 'block'));
-    </script>
+    <!-- Author Modal -->
+    <div id="authorModal" class="modal">
+
+      <!-- Authors' content -->
+      <div class="modal-content">
+        <div class="top">
+          <h3>Authors</h3>
+          <span class="authorClose">&times;</span>
+        </div>
+        <!-- Nick's Info -->
+        <ul class="modal-info">
+          <li><h3>Nicholas Evans</h3></li>
+          <li><a href="http://github.com/NEvans85"><img src="./github.png" /></a></li>
+          <li><a href="https://www.linkedin.com/in/nevans85pro/"><img src="./linkedin.png" /></a></li>
+        </ul>
+
+        <!-- Mike's Info -->
+        <ul class="modal-info">
+          <li><h3>Mike Brinkman</h3></li>
+          <li><a href="http://github.com/adeptio"><img src="./github.png" /></a></li>
+          <li><a href="https://www.linkedin.com/in/mrbrinkman/"><img src="./linkedin.png" /></a></li>
+        </ul>
+
+        <!-- John's Info -->
+        <ul class="modal-info">
+          <li><h3>John Lugtu</h3></li>
+          <li><a href="http://github.com/chewbaccajerky"><img src="./github.png" /></a></li>
+          <li><a href="https://www.linkedin.com/in/john-robin-lugtu/"><img src="./linkedin.png" /></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Credit Modal -->
+    <div id="creditModal" class="modal">
+      <div class="modal-content">
+        <span class="creditClose">&times;</span>
+        <h3>Credits</h3>
+
+        <ul class="credit-info">
+          <li><h3>Sound Effects</h3></li>
+          <li>http://soundbible.com/1810-Wind.html</li>
+          <li>https://www.zapsplat.com/music/strong-wind-blowing-across-anatolia-plain-turkey/</li>
+        </ul>
+
+        <ul class="credit-info">
+          <li><h3>Pano Visuals</h3></li>
+          <li>https://www.flickr.com/groups/equirectangular/</li>
+          <li>https://www.youtube.com/channel/<br>UCzuqhhs6NWbgTzMuM09WKDQ</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./authorModal.js"></script>
+    <script src="./creditModal.js"></script>
   </body>
 </html>

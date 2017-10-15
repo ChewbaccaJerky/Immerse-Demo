@@ -6,7 +6,22 @@ body, html {
   font-family: 'Arvo', serif;
 }
 
+h1 {
+  cursor: pointer;
+  cursor: hand;
+  transition: color 1s;
+}
+
+h1:hover {
+  color: #000;
+}
+
+h3 {
+  color: rgb(128, 206, 214);
+}
+
 .demo-page {
+  z-index: -1;
   display: flex;
   flex-direction: column;
 }
@@ -31,11 +46,11 @@ body, html {
 .header h1 a {
   text-decoration: none;
   color: #FFF;
-  transition: color 0.5s;
+  transition: color 1s;
 }
 
 .header h1 a:hover {
-  color: #FFF;
+  color: #000;
 }
 
 .author-dropdown {
@@ -114,6 +129,7 @@ background-info img {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgba(128, 206, 214, 1);
   padding: 1em;
 }
@@ -124,6 +140,109 @@ background-info img {
   transition: color 0.5s;
 }
 
+.footer h1 {
+  font-size: 1em;
+}
+
 .footer a:hover {
   color: #000;
+}
+
+/* Modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgba(0,0,0,0.5);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    /*border: 1px solid #888;*/
+    border-radius: 1em;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content span:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* The Close Button */
+.creditClose, .authorClose {
+    color: #FFF;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.creditClose:hover,
+.creditClose:focus {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.authorClose:hover,
+.authorClose:focus {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*border-bottom: 1px solid #E5E5E5;*/
+  margin: 0;
+}
+
+.top {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.top>h3 {
+  font-size: 2em;
+}
+
+.modal-info li h3 {
+  width: 3em;
+}
+
+.modal-info {
+  list-style: none;
+}
+
+.credit-modal h3 {
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.credit-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.credit-info li{
+  color: #FFF;
+  list-style: none;
+  font-size: 0.7em;
+}
+
+.credit-info li h3 {
+  font-size: 1.4em;
 }
